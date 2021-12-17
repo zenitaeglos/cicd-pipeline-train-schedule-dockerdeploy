@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("zenitaeglos/train-schedule")
+                    app = docker.build("aegloszenitprotonmail/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
